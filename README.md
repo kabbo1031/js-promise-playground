@@ -1,15 +1,9 @@
-function run(){
-  const result = document.getElementById('result');
-  result.innerText = 'Running...';
+# JS Promise Playground
 
-  const promise = new Promise((resolve, reject)=>{
-    setTimeout(()=>{
-      const ok = Math.random() > 0.5;
-      ok ? resolve('Promise resolved ✅') : reject('Promise rejected ❌');
-    }, 1500);
-  });
+A simple playground to demonstrate JavaScript Promises.
 
-  promise
-    .then(msg => result.innerText = msg)
-    .catch(err => result.innerText = err);
-}
+This project demonstrates:
+- Creating Promises
+- resolve / reject flow
+- then / catch handling
+- Async programming basics
